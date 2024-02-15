@@ -12,13 +12,15 @@ public class Recursion {
 
 //        System.out.println(sum(n));
 
-        int fib_len = 9;
+//        int fib_len = 9;
+//
+//        System.out.print("Fibonacci Series of " + fib_len + " numbers is: \n");
+//
+//        for (int i = 0; i < fib_len; i++) {
+//            System.out.print(fibo(i) + " ");
+//        }
 
-        System.out.print("Fibonacci Series of " + fib_len + " numbers is: \n");
-
-        for (int i = 0; i < fib_len; i++) {
-            System.out.print(fibo(i) + " ");
-        }
+        System.out.println(fact(5));
 
     }
     static void func(){
@@ -67,5 +69,11 @@ public class Recursion {
             return 1;
         }
         return fibo(n-1) + fibo(n-2);
+    }
+    static int fact(int n){
+        if (n==0){
+            return 1;
+        }
+        return n * fact(n-1);
     }
 }
