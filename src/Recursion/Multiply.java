@@ -10,8 +10,7 @@ public class Multiply {
         mult(n,k);
     }
     static void mult(int n, int k){
-        if (k==1){
-            System.out.println(n);
+        if (k==0){
             return;
         }
         mult(n,k-1);
