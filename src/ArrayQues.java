@@ -10,8 +10,10 @@ public class ArrayQues {
 //        System.out.println(secondLargest(arr));
 //        System.out.println(isSorted(arr2));
 //        System.out.println(removeDups(arr2));
-         int[] ans=LeftRotateArray(arr2);
-        System.out.println(Arrays.toString(ans));
+//         int[] ans=LeftRotateArray(arr2);
+//        System.out.println(Arrays.toString(ans));
+//        System.out.println(Arrays.toString(arr));
+        revArr(arr);
 
     }
     static int largestElem(int[] arr){
@@ -70,5 +72,10 @@ public class ArrayQues {
         }
         arr[n-1]=temp;
         return arr;
+    }
+    static void revArr(int[] arr){
+        for (int i = arr.length-1; i >=0 ; i--) {
+            System.out.print(arr[i] + " ");
+        }
     }
 }
