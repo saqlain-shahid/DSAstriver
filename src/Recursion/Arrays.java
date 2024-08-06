@@ -9,7 +9,7 @@ public class Arrays {
         //base case
         if (indx == arr.length) return;
         //self work
-        System.out.println(arr[indx]);
+        System.out.print(arr[indx] + " ");
         //recursive work
         arr(arr,indx+1);
 
